@@ -1,7 +1,8 @@
-package com.blues.dashboardview
+package com.blues
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.blues.dashboardview.R
 
 class MainActivity : AppCompatActivity() {
 

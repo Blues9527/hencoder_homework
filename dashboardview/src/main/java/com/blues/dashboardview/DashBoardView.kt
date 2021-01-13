@@ -3,15 +3,14 @@ package com.blues.dashboardview
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import com.blues.common.extension.dp
 import kotlin.math.cos
 import kotlin.math.sin
 
-val LENGTH = 120.dp
-val RADIUS = 150.dp
-val SWEEP_ANGEL = 120f
+private val LENGTH = 120.dp
+private val RADIUS = 150.dp
+private const val SWEEP_ANGEL = 120f
 
 class DashBoardView(context: Context?, attrs: AttributeSet?) : View(context, attrs) {
 
