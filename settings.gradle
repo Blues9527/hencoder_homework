@@ -1,0 +1,6 @@
+//include ':lib-annotations'
+//include ':lib-apt'
+include ':common'
+include ':homework'
+//include ':app'
+rootProject.name = "HomeWork"
