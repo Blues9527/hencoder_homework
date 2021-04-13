@@ -10,17 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.blues.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <activity android:name="com.blues.animator.ScaleActivity" />
         <activity android:name="com.blues.animator.PointFActivity" />
         <activity android:name="com.blues.animator.CameraActivity" />
         <activity android:name="com.blues.animator.ProvinceActivity" />
+
+        <activity android:name="com.blues.multitouchview.MultiTouchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.blues.multitouchview.MultiTouchActivity1" />
+        <activity android:name="com.blues.multitouchview.MultiTouchActivity2" />
+        <activity android:name="com.blues.multitouchview.MultiTouchActivity3" />
     </application>
 
 </manifest>

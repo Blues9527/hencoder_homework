@@ -2,6 +2,21 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+class CustomPlugin implements Plugin<Project> {
+
+    @Override
+    void apply(Project target) {
+        def extension = target.getExtensions().create('Blues', CustomExtension)
+        println "Hello ${extension.name}!"
+    }
+}
+
+class CustomExtension {
+    def name = 'Blues'
+}
+
+apply plugin: CustomPlugin
+
 android {
     compileSdkVersion 30
     buildToolsVersion "29.0.3"
@@ -43,5 +58,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // debugImplementation because LeakCanary should only run in debug builds.
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.6'
 
 }
